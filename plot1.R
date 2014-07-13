@@ -2,7 +2,7 @@ plot1 <- function(data) {
   #Open png graphics device
   png(file = "plot1.png", width=480, height=480, units="px")
   #Create a histogram plot
-  hist(x$Global_active_power,xlab="Global Active Power (kilowatts)",col="red",main="Global Active Power")
+  hist(data$Global_active_power,xlab="Global Active Power (kilowatts)",col="red",main="Global Active Power")
   #Switch the png graphics device off
   dev.off()
 }
